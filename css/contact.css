@@ -5,17 +5,30 @@
 body {
 	font-family: sans-serif;
 	margin: 0;
-	color: white;
-	background-color: black;
+	background: rgb(136,96,208);
+	background: linear-gradient(90deg, rgba(136,96,208,1) 17%, rgba(86,128,233,1) 64%, rgba(132,206,235,1) 100%, rgba(90,185,234,1) 100%, rgba(193,200,228,1) 100%);
+}
+
+@media screen and (max-width: 700px) {
+	.content-main-row, .navigation {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.navigation .navigation a{
+		float: none;
+		width: 100%;
+	}
 }
 
 h3 {
-	color: white;
 	font-size: 28px;
+	color: white;
 }
 
 h4 {
-	color: yellow;
+	color: black;
 }
 
 div li {
@@ -26,10 +39,18 @@ a {
 	color: white;
 }
 
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
 footer {
 	padding: 15px;
 	text-align: center;
-	background-color: #333;
 	margin-bottom: 0;
 	margin: 20px;
 }
@@ -42,49 +63,54 @@ footer a {
 }
 
 footer a:hover {
-	color: yellow;
+	color: black;
 }
 
 .header {
 	padding: 10px;
 	margin: 20px;
 	text-align: center;
-	background-color: #333;
 	color: white;
 	font-size: 30px;
 }
 
 .navigation {
-	background-color: black;
+	overflow: hidden;
+	display: block;
 	height: 55px;
+	width: 100%;
 	position: sticky;
 	top: 0px;
-	padding: 10px;
 	font-size: 23px;
-}
-
-.navigation .active {
-	color: yellow;
+	background: rgb(136,96,208);
+	background: linear-gradient(90deg, rgba(136,96,208,1) 17%, rgba(86,128,233,1) 64%, rgba(132,206,235,1) 100%, rgba(90,185,234,1) 100%, rgba(193,200,228,1) 100%);
 }
 
 .navigation a {
 	color: white;
-	margin: 3px;
+	margin: 10px;
 	text-decoration: none;
 	text-align: center;
-	background-color: black;
-	padding: 7px;
+	padding: 5px;
 }
 
 .navigation a:hover {
-	color: yellow;
+	color: black;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
 }
 
 .contact-info {
 	height: 400px;
 	text-align: left;
 	padding: 20px;
-	background-color: #111;
+	background-color: white;
 	margin-top: 40px;
 	margin-left: 20px;
 	margin-right: 20px;
